@@ -7,26 +7,25 @@
 	</head>
 
 	<body>
-		<?php
-			$nb_fichier = 0;
 
-			echo '<ul>';
-			if($dossier = opendir('./Documents'))
-			{
-				while (false !== ($fichier = readdir($dossier)))
-				{
-					if($fichier != '.' && $fichier != '..' && $fichier != 'index.php')
-					{
-						$nb_fichier++;
-						echo '<li><a href="./mondossier/' . $fichier . '">' . $fichier . '</a></li>';
-					}
-				}
-				closedir($dossier);
-			}
-			else
-			{
-				echo "Le dossier n'a pas pu être ouvert";
-			}
-		?>
+		<header>
+			
+			<h1>Dossier principal</h1>
+
+			
+		</header>
+
+		
+		<div class="afficheDossier">
+			<img src="./img/Pictures.png">
+			<img src="./img/Pictures.png">
+			<img src="./img/Pictures.png">
+			<img src="./img/Pictures.png">
+			<img src="./img/Pictures.png">
+			<img src="./img/Pictures.png">
+		</div>
+			
+
+
 	</body>
 </html>
