@@ -8,16 +8,34 @@ body
 {
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 /* MOBILE */
-@media screen and (max-width: 415px)
+@media screen and (max-width: 415px) /*  */
 {
-	a
+	header
 	{
-		display: none;
+		height: 20%;
+		width: 100%;
+		background-color: blue;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
+
+	.afficheDossier
+	{
+		background-color: rgb(160,160,160);
+		text-align: center;
+	}
+
+	.afficheDossier img
+	{
+		width: 35%;
+	}
+
+
+
+	
 }
